@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import folium
 from folium.plugins import HeatMap
-from streamlit_folium import st_folium
+from streamlit_folium import folium_static
 from geopy.geocoders import Nominatim
 
 # 1. CONFIGURACIÓN DE LA INTERFAZ
