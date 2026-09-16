@@ -37,7 +37,7 @@ boton_buscar = st.sidebar.button("🔍 Escanear Zona", use_container_width=True)
 
 # 3. MOTOR DEL SISTEMA (Se activa al presionar el botón)
 if boton_buscar:
-    if no rubros_seleccionados:
+    if not rubros_seleccionados:
         st.warning("Por favor, selecciona al menos un rubro.")
     else:
         with st.spinner('Conectando a los satélites y descargando datos comerciales...'):
