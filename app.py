@@ -99,6 +99,6 @@ if boton_buscar:
                 folium.Marker([comp['lat'], comp['lon']], popup=folium.Popup(tarjeta_html, max_width=300), icon=folium.Icon(color="red", icon="info-sign")).add_to(mapa)
             
             # Renderizar mapa en la página web
-            st_folium(mapa, width=1200, height=600)
+            folium_static(mapa, width=1200, height=600)
             
             st.success("✅ Análisis completado con éxito.")
